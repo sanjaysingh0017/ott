@@ -14,4 +14,9 @@ public class HomeController {
         model.addAttribute("user", principal.getName());
         return "index";
     }
+
+    @GetMapping("/redirect-ott-page")
+    public String ott() {
+        return "ott-page";
+    }
 }
